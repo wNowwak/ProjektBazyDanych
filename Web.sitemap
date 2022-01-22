@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="pages/main.aspx" title="Strona główna"  description="">
+    <siteMapNode url="pages/orders.aspx" title="Zamówienia"  description="">
+      <siteMapNode url="" title="Konfiguracja"  description="">
+        <siteMapNode url="pages/addPayment.aspx" title="Dodaj sposób płatności" description=""/>
+        <siteMapNode url="pages/addDelivery.aspx" title="Dodaj sposób dostawy" description=""/>
+        <siteMapNode url="pages/editPayment.aspx" title="Edytuj sposób płatności" description=""/>
+        <siteMapNode url="pages/editDelivery.aspx" title="Edytuj sposób dostawy" description=""/>
+      </siteMapNode>
+    </siteMapNode>
+    
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.Master.cs" Inherits="ProjektZaliczeniowy.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Image ID="logo" runat="server" ImageUrl="~/logo.png" />
+            <p>
+                <asp:SiteMapDataSource ID="MenuDS" runat="server" />
+                <asp:Menu ID="Menu" runat="server" DataSourceID="MenuDS" StaticSubMenuIndent="16px" Orientation="Horizontal" StaticDisplayLevels ="3" ></asp:Menu>
+            </p>
+        </div>
+        
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder> 
+        </div>
+        <asp:Label ID="Foot" runat="server" Text="Realizowane w ramach kursu: "></asp:Label>
+        <asp:Label ID="FootTxt" runat="server" Text="Zaawansowane technologie bazodanowe" Font-Bold="true"></asp:Label>
+            
+    </form>
+</body>
+</html>

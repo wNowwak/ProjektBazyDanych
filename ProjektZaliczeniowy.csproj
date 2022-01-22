@@ -67,19 +67,77 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="logo.png" />
+    <Content Include="pages\addDelivery.aspx" />
+    <Content Include="pages\addPayment.aspx" />
+    <Content Include="pages\editDelivery.aspx" />
+    <Content Include="pages\editPayment.aspx" />
+    <Content Include="pages\main.aspx" />
+    <Content Include="pages\orders.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pages\addDelivery.aspx.cs">
+      <DependentUpon>addDelivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\addDelivery.aspx.designer.cs">
+      <DependentUpon>addDelivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\addPayment.aspx.cs">
+      <DependentUpon>addPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\addPayment.aspx.designer.cs">
+      <DependentUpon>addPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\editDelivery.aspx.cs">
+      <DependentUpon>editDelivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\editDelivery.aspx.designer.cs">
+      <DependentUpon>editDelivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\editPayment.aspx.cs">
+      <DependentUpon>editPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\editPayment.aspx.designer.cs">
+      <DependentUpon>editPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\orders.aspx.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\orders.aspx.designer.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="master.Master.cs">
+      <DependentUpon>master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master.Master.designer.cs">
+      <DependentUpon>master.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="master.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
