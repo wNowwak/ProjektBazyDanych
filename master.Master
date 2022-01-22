@@ -5,16 +5,25 @@
 <html>
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" href="style.css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Image ID="logo" runat="server" ImageUrl="~/logo.png" />
+            <asp:Image ID="logo" runat="server" ImageUrl="~/logo.png" Height="100px" Width="800px" />
             <p>
                 <asp:SiteMapDataSource ID="MenuDS" runat="server" />
-                <asp:Menu ID="Menu" runat="server" DataSourceID="MenuDS" StaticSubMenuIndent="16px" Orientation="Horizontal" StaticDisplayLevels ="3" ></asp:Menu>
+                <asp:Menu ID="Menu" runat="server" DataSourceID="MenuDS" StaticSubMenuIndent="10px" Orientation="Horizontal" StaticDisplayLevels ="3" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#7C6F57"  >
+                    <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#F7F6F3" />
+                    <DynamicSelectedStyle BackColor="#979899" />
+                    <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#979899" />
+            </asp:Menu>
             </p>
         </div>
         
@@ -23,8 +32,11 @@
                 
             </asp:ContentPlaceHolder> 
         </div>
-        <asp:Label ID="Foot" runat="server" Text="Realizowane w ramach kursu: "></asp:Label>
-        <asp:Label ID="FootTxt" runat="server" Text="Zaawansowane technologie bazodanowe" Font-Bold="true"></asp:Label>
+        <div class="footer">
+            <asp:Label ID="Foot" runat="server" Text="Realizowane w ramach kursu: "></asp:Label>
+            <asp:Label ID="FootTxt" runat="server" Text="Zaawansowane technologie bazodanowe" Font-Bold="true"></asp:Label>
+        </div>
+        
             
     </form>
 </body>

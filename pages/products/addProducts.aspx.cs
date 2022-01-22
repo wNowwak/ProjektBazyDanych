@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ProjektZaliczeniowy.pages
+namespace ProjektZaliczeniowy.pages.products
 {
-    public partial class orders : System.Web.UI.Page
+    public partial class addProducts : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

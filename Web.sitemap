@@ -1,14 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="pages/main.aspx" title="Strona główna"  description="">
-    <siteMapNode url="pages/orders.aspx" title="Zamówienia"  description="">
+    <siteMapNode url="pages/orders/order.aspx" title="Zamówienia"  description="">
+      <siteMapNode url="pages/products/product.aspx" title="Produkty" description="">
+        <siteMapNode url="pages/products/addVat.aspx" title="Dodaj stawkę VAT" description=""/>
+        <siteMapNode url="pages/products/editVat.aspx" title="Edytuj stawkę VAT" description=""/>
+
+      </siteMapNode>
+      <siteMapNode url="" title="Klienci i pracownicy" description="">
+        <siteMapNode url="pages/persons/customerAdd.aspx" title="Dodaj kontrahenta" description=""/>
+        <siteMapNode url="pages/persons/customerEdit.aspx" title="Edytuj kontrahenta" description=""/>
+        <siteMapNode url="pages/persons/employeeAdd.aspx" title="Dodaj pracownika" description=""/>
+        <siteMapNode url="pages/persons/employeeEdit.aspx" title="Edytuj pracownika" description=""/>
+      </siteMapNode>
       <siteMapNode url="" title="Konfiguracja"  description="">
-        <siteMapNode url="pages/addPayment.aspx" title="Dodaj sposób płatności" description=""/>
-        <siteMapNode url="pages/addDelivery.aspx" title="Dodaj sposób dostawy" description=""/>
-        <siteMapNode url="pages/editPayment.aspx" title="Edytuj sposób płatności" description=""/>
-        <siteMapNode url="pages/editDelivery.aspx" title="Edytuj sposób dostawy" description=""/>
+        <siteMapNode url="pages/configuration/addPayment.aspx" title="Dodaj sposób płatności" description=""/>
+        <siteMapNode url="pages/configuration/editPayment.aspx" title="Edytuj sposób płatności" description=""/>
+        <siteMapNode url="pages/configuration/addDelivery.aspx" title="Dodaj sposób dostawy" description=""/>
+        <siteMapNode url="pages/configuration/editDelivery.aspx" title="Edytuj sposób dostawy" description=""/>
+        <siteMapNode url="pages/configuration/addDepartment.aspx" title="Dodaj dział" description=""/>
+        <siteMapNode url="pages/configuration/editDepartment.aspx" title="Edytuj dział" description=""/>
+        <siteMapNode url="pages/configuration/addJobPosition.aspx" title="Dodaj stanowisko" description=""/>
+        <siteMapNode url="pages/configuration/editJobPosition.aspx" title="Edytuj stanowisko" description=""/>
+        <siteMapNode url="pages/configuration/addWarehouse.aspx" title="Dodaj magazyn" description=""/>
+        <siteMapNode url="pages/configuration/editWarehouse.aspx" title="Edytuj magazyn" description=""/>
       </siteMapNode>
     </siteMapNode>
-    
   </siteMapNode>
+
+
+
 </siteMap>
