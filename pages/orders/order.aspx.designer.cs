@@ -8,9 +8,9 @@
 //------------------------------------------------------------------------------
 
 
-namespace ProjektZaliczeniowy.pages
+namespace ProjektZaliczeniowy.pages.orders
 {
-    public partial class editPayment
+    public partial class order
     {
     }
 }
