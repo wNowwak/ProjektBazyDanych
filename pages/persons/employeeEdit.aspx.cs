@@ -13,5 +13,17 @@ namespace ProjektZaliczeniowy.pages.persons
         {
 
         }
+
+        protected void Employee_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            var ddlStanowisko = (DropDownList)Employee.Rows[e.RowIndex].FindControl("DDLStanowisko");
+            SqlCustomer.UpdateParameters["st_id"].DefaultValue = ddlStanowisko.SelectedValue;
+            var ddlDzial = (DropDownList)Employee.Rows[e.RowIndex].FindControl("DDLDzial");
+            SqlCustomer.UpdateParameters["dz_id"].DefaultValue = ddlDzial.SelectedValue;
+            Employee.DataBind();
+            
+
+
+        }
     }
 }
