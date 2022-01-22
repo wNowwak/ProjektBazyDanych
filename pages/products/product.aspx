@@ -17,7 +17,7 @@
             <asp:BoundField DataField="tw_symbol" HeaderText="Symbol" SortExpression="tw_symbol" />
             <asp:BoundField DataField="tw_nazwa" HeaderText="Nazwa produktu" SortExpression="tw_nazwa" />
             <asp:BoundField DataField="tw_opis" HeaderText="Opis" SortExpression="tw_opis"  />
-            <asp:BoundField DataField="stn_Ilosc" HeaderText="Ilość" SortExpression="stn_Ilosc" />
+            <asp:BoundField DataField="stn_Ilosc" HeaderText="Ilość" SortExpression="stn_Ilosc" ReadOnly="true" />
             <asp:CheckBoxField DataField="tw_aktywny" HeaderText="Aktywny" SortExpression="tw_aktywny" />
             <asp:BoundField DataField="tw_ean" HeaderText="EAN" SortExpression="tw_ean" />
             <asp:TemplateField HeaderText ="Stawka VAT" SortExpression="vat_stawka"  >

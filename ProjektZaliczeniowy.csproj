@@ -84,6 +84,7 @@
     <Content Include="pages\persons\employeeAdd.aspx" />
     <Content Include="pages\persons\employeeEdit.aspx" />
     <Content Include="pages\products\addProducts.aspx" />
+    <Content Include="pages\products\AddProductStock.aspx" />
     <Content Include="pages\products\addVat.aspx" />
     <Content Include="pages\configuration\editDelivery.aspx" />
     <Content Include="pages\configuration\editDepartment.aspx" />
@@ -179,6 +180,13 @@
     </Compile>
     <Compile Include="pages\products\addProducts.aspx.designer.cs">
       <DependentUpon>addProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\products\AddProductStock.aspx.cs">
+      <DependentUpon>AddProductStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\products\AddProductStock.aspx.designer.cs">
+      <DependentUpon>AddProductStock.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\products\addVat.aspx.cs">
       <DependentUpon>addVat.aspx</DependentUpon>
